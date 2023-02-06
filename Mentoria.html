@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <h1 class="title" title="MENTORIA">Mentoria</h1>
+      <p class="texttitle">
+        Preencha o formulário abaixo para agendar a sua mentoria
+      </p>
+    </section>
+    <main>
+      <form action="" method="post" id="form-mentoring">
+        <fieldset>
+          <div id="fieldset-wrepper">
+            <div class="legend-wrepper">
+              <legend>Informações pessoais</legend>
+              <div id="line"></div>
+
+              <div class="inf-name">
+                <div id="model-box">
+                  <label for="input-name">Nome</label>
+                  <input type="text" name="name" id="input-name" required />
+                </div>
+                <div id="model-box">
+                  <label for="input-lastname">Sobrenome</label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="input-lastname"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div id="model-box">
+                <label for="input-email"
+                  >Email <span>(digite um email válido)</span></label
+                >
+                <input type="email" name="email" id="input-email" required />
+              </div>
+
+              <div id="model-box">
+                <label for="input-password"
+                  >Senha
+                  <span>(mínimo de 6 caracteres)</span>
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="input-password"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+
+            <div class="legend-wrepper">
+              <legend>Informações do mentor</legend>
+              <div id="line"></div>
+              <div id="model-box">
+                <label for="input-mentorname"
+                  >Nome do seu mentor
+                  <span>(só o primeiro nome)</span>
+                </label>
+                <input
+                  type="text"
+                  name="mentorname"
+                  id="input-mentorname"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="legend-wrepper">
+              <legend>Seus horários disponíveis</legend>
+              <div id="line"></div>
+              <p class="mentorind-title">Primeira mentoria</p>
+              <div class="date-time">
+                <div id="model-box">
+                  <label for="input-date">Data<span>(DD/MM/AAAA)</span> </label>
+                  <input
+                    type="text"
+                    name="first-mentory-date"
+                    id="input-date"
+                    required
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+                <div id="model-box">
+                  <label for="input-timebegin">Das</label>
+                  <input
+                    type="text"
+                    name="timebegin"
+                    id="input-timebegin"
+                    required
+                    onfocus="(this.type='time')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+                <div id="model-box">
+                  <label for="input-timeend">Até</label>
+                  <input
+                    type="text"
+                    name="input-timeend"
+                    id="input-timeend"
+                    required
+                    onfocus="(this.type='time')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+              </div>
+              <p class="mentorind-title">Segunda mentoria</p>
+              <div class="date-time">
+                <div id="model-box">
+                  <label for="input-date">Data<span>(DD/MM/AAAA)</span> </label>
+                  <input
+                    type="text"
+                    name="second-mentory-date"
+                    id="input-date"
+                    required
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+                <div id="model-box">
+                  <label for="input-timebegin">Das</label>
+                  <input
+                    type="text"
+                    name="timebegin"
+                    id="input-timebegin"
+                    required
+                    onfocus="(this.type='time')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+                <div id="model-box">
+                  <label for="input-timeend">Até</label>
+                  <input
+                    type="text"
+                    name="input-timeend"
+                    id="input-timeend"
+                    required
+                    onfocus="(this.type='time')"
+                    onblur="(this.type='text')"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <div class="down">
+        <button type="submit" form="form-mentoring">salvar</button>
+      </div>
+    </main>
+  </body>
+</html>
